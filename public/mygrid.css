@@ -1,0 +1,65 @@
+@font-face {
+ 	src: url('https://fonts.googleapis.com/css?family=Lato" rel="stylesheet');
+}
+
+.container {
+	display: grid;
+	height: 100%;
+	grid-template-columns: repeat(4,1fr);
+	grid-template-rows: auto auto auto 50px;
+	font-family: 'Lato', sans-serif;
+}
+
+.menu {
+	background-color: #231F20;
+	grid-column: 1/-1;
+	text-align: center;
+	padding: 10px;
+}
+
+.header {
+	background: #E64D3F;
+	grid-column: 1/-1;
+	text-align: center;padding: 20px;
+}
+
+.sidebar {
+	background: #f4eb42;
+	background-size: cover;
+	grid-column: 1/2;
+	border : 2px solid #86C6BF;
+}
+
+.konten {
+	background: #EAB000;
+	display: grid;
+	grid-column: 2/-1;
+	grid-template-columns: repeat(1,1fr);
+	grid-template-rows: auto auto auto;
+	grid-gap: 4px;
+}
+
+.subcontent {
+	background: #018E98;
+ 	grid-column: 1/-1;
+ 	padding: 10px;
+ 	text-align: center;
+ 	font-size: 20px;
+}
+
+.footer {
+	background: #336496;
+	grid-column: 1/-1;
+	padding: 10px;
+	color: white;
+	font-weight :600;
+}
+
+a{
+	text-decoration: none;
+ 	color: white
+}
+a:hover{
+	text-decoration: underline;
+}
+

@@ -1,0 +1,47 @@
+@font-face {
+  font-family: 'Tagesschrift';
+  src: url('https://fonts.googleapis.com/css?family=Lato" rel="stylesheet');
+}
+
+.container {
+ display: grid;
+ height: 100%;
+ grid-template-columns: repeat(4,1fr);
+ grid-template-rows: 50px 50px auto 50px;
+font-family: 'Lato', sans-serif;
+}
+.menu {
+ background: lightblue;
+ grid-column: 1/4;
+}.menu {
+ background: lightblue;
+ grid-column: 1/-1;
+}
+.header {
+ background: lavenderblush;
+ grid-column: 1/-1;
+}
+.sidebar {
+ background: #f4eb42;
+ grid-column: 1/2
+}
+.konten {
+ background: lightpink;
+ display: grid;
+ grid-column: 2/-1;
+ grid-template-columns: repeat(1,1fr);
+ grid-template-rows: 50px 50px 50px;
+ grid-gap: 4px;
+}
+.subcontent {
+	background: lightgrey;
+ 	grid-column: 1/-1;
+}
+
+.footer {
+ background: lightcyan;
+ grid-column: 1/-1;
+}
+ul{
+	text-decoration: none;
+}
