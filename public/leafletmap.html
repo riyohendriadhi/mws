@@ -23,6 +23,33 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={
  		id: 'mapbox.streets',
  		accessToken: 'pk.eyJ1IjoiaWZpa2FyaWZpbiIsImEiOiJjamxndm83cTQwZjYwM3BvMHBma3dndGJqIn0.6LyWJiWv-yvp7mNPbyebYA'
 	}).addTo(mymap);
+	
+	var arr_marker= [
+		[-8.703315, 115.168869],
+		[-8.721650,115.169856],
+		[-8.731640,115.169856],
+		[-8.741630,115.169856],
+		[-8.751620,115.169856]
+	];
+
+	for (m of arr_marker) {
+		let marker = L.marker(m).addTo(mymap);
+		marker.bindPopup("<b>Resto top disini</b><br>yes!").openPopup();
+	}
+	
+	let popup = L.popup()
+					.setLatLng([-8.693315, 115.168869])
+					.setContent("Restoran terbaik disini.")
+					.openOn(mymap);
+	
+	var circle = L.circle([-8.703315, 115.168869], {
+		color: 'red',
+		fillColor: '#f03',
+		fillOpacity: 0.5,
+		radius: 500
+	}).addTo(mymap);
+	circle.bindPopup("Ini sebuah circle.");
+	
 </script>
 </body>
 </html>
