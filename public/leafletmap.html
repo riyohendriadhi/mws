@@ -16,20 +16,20 @@
  		</div>
  </div>
 <script>
-var mymap = L.map('mapid').setView([-8.701660,115.169856], 14);
-L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
- 		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>,Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+	var mymap = L.map('mapid').setView([-6.187541, 106.832280], 11);
+	L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', { 
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>,Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
  		maxZoom: 20,
  		id: 'mapbox.streets',
  		accessToken: 'pk.eyJ1IjoiaWZpa2FyaWZpbiIsImEiOiJjamxndm83cTQwZjYwM3BvMHBma3dndGJqIn0.6LyWJiWv-yvp7mNPbyebYA'
 	}).addTo(mymap);
-	
+
 	var arr_marker= [
-		[-8.703315, 115.168869],
-		[-8.721650,115.169856],
-		[-8.731640,115.169856],
-		[-8.741630,115.169856],
-		[-8.751620,115.169856]
+		[-6.233447, 106.956735],
+		[-6.248176, 106.990252],
+		[-6.253977, 106.989565],
+		[-6.242160, 106.969223],
+		[-6.248389, 106.961885]
 	];
 
 	for (m of arr_marker) {
@@ -38,11 +38,11 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={
 	}
 	
 	let popup = L.popup()
-					.setLatLng([-8.693315, 115.168869])
+					.setLatLng([-6.233447, 106.956735])
 					.setContent("Restoran terbaik disini.")
 					.openOn(mymap);
 	
-	var circle = L.circle([-8.703315, 115.168869], {
+	var circle = L.circle([-6.233447, 106.956735], {
 		color: 'red',
 		fillColor: '#f03',
 		fillOpacity: 0.5,
@@ -51,5 +51,6 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={
 	circle.bindPopup("Ini sebuah circle.");
 	
 </script>
+
 </body>
 </html>
